@@ -704,13 +704,17 @@ AddOutputFilter chunkFilter
 				<Item Name="WPI_UtilitiesTimebaseConstants.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Utilities/WPI_UtilitiesTimebaseConstants.vi"/>
 				<Item Name="Write Value Core.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/Write Value Core.vi"/>
 			</Item>
-			<Item Name="ArmAbsolutePoseToXYPoint.vi" Type="VI" URL="../DeepSpaceSrc/Implements/Arm/PathPlannerSupport/ArmAbsolutePoseToXYPoint.vi"/>
-			<Item Name="ArmAbsolutePosition.ctl" Type="VI" URL="../DeepSpaceSrc/Implements/Arm/TypeDefs/ArmAbsolutePosition.ctl"/>
+			<Item Name="ArgosLib.lvlib" Type="Library" URL="../../2018-Robot/ArgosLib/ArgosLib.lvlib"/>
+			<Item Name="Config_Motor.ctl" Type="VI" URL="../ArgosLib/Config/ConfigComponents/TypeDefs/Config_Motor.ctl"/>
+			<Item Name="Config_MotorCtrlType.ctl" Type="VI" URL="../ArgosLib/Config/ConfigComponents/TypeDefs/Config_MotorCtrlType.ctl"/>
+			<Item Name="EdgeDetector.vi" Type="VI" URL="../ArgosLib/Signal Processing/EdgeDetector.vi"/>
+			<Item Name="EdgeDetector_Type.ctl" Type="VI" URL="../ArgosLib/Signal Processing/TypeDefs/EdgeDetector_Type.ctl"/>
 			<Item Name="FRC_NetworkCommunication.dll" Type="Document" URL="FRC_NetworkCommunication.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="InterpolateWristPositions.vi" Type="VI" URL="../DeepSpaceSrc/Implements/Arm/PathPlannerSupport/InterpolateWristPositions.vi"/>
+			<Item Name="Lookup_Table.vi" Type="VI" URL="../ArgosLib/Miscellaneous/Lookup_Table.vi"/>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
+			<Item Name="Modulus.vim" Type="VI" URL="../ArgosLib/Math/Modulus.vim"/>
 			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
@@ -723,8 +727,10 @@ AddOutputFilter chunkFilter
 			<Item Name="nivissvc.dll" Type="Document" URL="nivissvc.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="RedistributeArmAbsolutePose.vi" Type="VI" URL="../DeepSpaceSrc/Implements/Arm/PathPlannerSupport/RedistributeArmAbsolutePose.vi"/>
-			<Item Name="SwitchedCameraData.vi" Type="VI" URL="../PowerUpSrc/Global_Var-RefNum/SwitchedCameraData.vi"/>
+			<Item Name="RobotDriveMotorSelectorEnum.ctl" Type="VI" URL="../ArgosLib/Drive/MotorControl/TypeDefs/RobotDriveMotorSelectorEnum.ctl"/>
+			<Item Name="RobotDriveOpen6MotorWithTalonSR.vi" Type="VI" URL="../ArgosLib/Drive/MotorControl/RobotDriveOpen6MotorWithTalonSR.vi"/>
+			<Item Name="RobotDriveOpen6MotorWithTalonSRX.vi" Type="VI" URL="../ArgosLib/Drive/MotorControl/RobotDriveOpen6MotorWithTalonSRX.vi"/>
+			<Item Name="SwitchedCameraData.vi" Type="VI" URL="../../2018-Robot/PowerUpSrc/Global_Var-RefNum/SwitchedCameraData.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="FRC Robot Boot-up Deployment" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">
