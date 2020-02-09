@@ -29,7 +29,7 @@ hue_max:88
 hue_min:60
 image_flip:0
 image_source:0
-img_to_show:1
+img_to_show:0
 intersection_filter:0
 pipeline_led_enabled:1
 pipeline_led_power:100
