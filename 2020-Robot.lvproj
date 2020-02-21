@@ -761,6 +761,7 @@ AddOutputFilter chunkFilter
 			</Item>
 			<Item Name="ArmAbsolutePoseToXYPoint.vi" Type="VI" URL="../DeepSpaceSrc/Implements/Arm/PathPlannerSupport/ArmAbsolutePoseToXYPoint.vi"/>
 			<Item Name="ArmAbsolutePosition.ctl" Type="VI" URL="../DeepSpaceSrc/Implements/Arm/TypeDefs/ArmAbsolutePosition.ctl"/>
+			<Item Name="Config_PwF_TMD37003.ctl" Type="VI" URL="../ArgosLib/Config/ConfigComponents/TypeDefs/Config_PwF_TMD37003.ctl"/>
 			<Item Name="Finish.vi" Type="VI" URL="../Finish.vi"/>
 			<Item Name="FRC_NetworkCommunication.dll" Type="Document" URL="FRC_NetworkCommunication.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
