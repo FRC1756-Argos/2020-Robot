@@ -3,8 +3,8 @@ area_min:0.004096
 area_similarity:18
 aspect_max:7.215007812500001
 aspect_min:0.804200000000003
-black_level:10
-blue_balance:1750
+black_level:0
+blue_balance:1500
 calibration_type:0
 contour_grouping:0
 contour_sort_final:0
@@ -35,11 +35,11 @@ pipeline_led_enabled:1
 pipeline_led_power:100
 pipeline_res:0
 pipeline_type:0
-red_balance:1299
+red_balance:1350
 roi_x:0.000000
 roi_y:0.000000
 sat_max:255
-sat_min:81
+sat_min:80
 send_corners:0
 send_raw_contours:0
 solve3d:0
@@ -53,6 +53,6 @@ solve3d_precies:1
 solve3d_precise:0
 solve3d_zoffset:0.000000
 val_max:255
-val_min:76
+val_min:80
 y_max:1.000000
 y_min:-1.000000
