@@ -121,6 +121,8 @@ AddOutputFilter chunkFilter
 			<Item Name="Test.vi" Type="VI" URL="../Test.vi"/>
 			<Item Name="Vision Processing.vi" Type="VI" URL="../Vision Processing.vi"/>
 		</Item>
+		<Item Name="ArgosLib.lvlib" Type="Library" URL="../../ArgosLib-LV-Dev/ArgosLib.lvlib"/>
+		<Item Name="EdgeCounter.vi" Type="VI" URL="../../ArgosLib-LV-Dev/Signal Processing/EdgeCounter.vi"/>
 		<Item Name="Robot Main.vi" Type="VI" URL="../Robot Main.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
@@ -760,12 +762,15 @@ AddOutputFilter chunkFilter
 				<Item Name="Write Value Core.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/Write Value Core.vi"/>
 			</Item>
 			<Item Name="ArmAbsolutePoseToXYPoint.vi" Type="VI" URL="../DeepSpaceSrc/Implements/Arm/PathPlannerSupport/ArmAbsolutePoseToXYPoint.vi"/>
+			<Item Name="ArmAbsolutePoseToXYPoint.vi" Type="VI" URL="../../DeepSpaceSrc/Implements/Arm/PathPlannerSupport/ArmAbsolutePoseToXYPoint.vi"/>
 			<Item Name="ArmAbsolutePosition.ctl" Type="VI" URL="../DeepSpaceSrc/Implements/Arm/TypeDefs/ArmAbsolutePosition.ctl"/>
+			<Item Name="ArmAbsolutePosition.ctl" Type="VI" URL="../../DeepSpaceSrc/Implements/Arm/TypeDefs/ArmAbsolutePosition.ctl"/>
 			<Item Name="Finish.vi" Type="VI" URL="../Finish.vi"/>
 			<Item Name="FRC_NetworkCommunication.dll" Type="Document" URL="FRC_NetworkCommunication.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="InterpolateWristPositions.vi" Type="VI" URL="../DeepSpaceSrc/Implements/Arm/PathPlannerSupport/InterpolateWristPositions.vi"/>
+			<Item Name="InterpolateWristPositions.vi" Type="VI" URL="../../DeepSpaceSrc/Implements/Arm/PathPlannerSupport/InterpolateWristPositions.vi"/>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -780,7 +785,9 @@ AddOutputFilter chunkFilter
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="RedistributeArmAbsolutePose.vi" Type="VI" URL="../DeepSpaceSrc/Implements/Arm/PathPlannerSupport/RedistributeArmAbsolutePose.vi"/>
+			<Item Name="RedistributeArmAbsolutePose.vi" Type="VI" URL="../../DeepSpaceSrc/Implements/Arm/PathPlannerSupport/RedistributeArmAbsolutePose.vi"/>
 			<Item Name="SwitchedCameraData.vi" Type="VI" URL="../PowerUpSrc/Global_Var-RefNum/SwitchedCameraData.vi"/>
+			<Item Name="SwitchedCameraData.vi" Type="VI" URL="../../PowerUpSrc/Global_Var-RefNum/SwitchedCameraData.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="FRC Robot Boot-up Deployment" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">
