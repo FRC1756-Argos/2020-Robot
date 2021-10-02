@@ -1,0 +1,545 @@
+<HTML>
+<HEAD>
+<TITLE>ADIS16448 Loop.vi</TITLE>
+<META NAME="Author" CONTENT="">
+<META NAME="GENERATOR" CONTENT="G Development Environment">
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<A NAME="ADIS16448 Loop.vi"></A><H2>ADIS16448 Loop.vi</H2>
+<P></P>
+<HR>
+<H3>Connector Pane</H3>
+<P><IMG SRC="../../../../../../img/ADIS16448 Loop.vic.png" ALT="ADIS16448 Loop.vi"></P>
+<HR>
+<H3>Front Panel</H3>
+<P><IMG SRC="../../../../../../img/ADIS16448 Loop.vip.png" ALT="ADIS16448 Loop.vi"></P>
+<HR>
+<H3>Controls and Indicators</H3>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../../img/cerrcodeclst.png" ALT="cerrcodeclst"></P>
+</TD>
+<TD>
+<B>error in</B> <P><B>error in</B> can accept error information wired from VIs previously called. Use this information to decide if any functionality should be bypassed in the event of errors from other VIs.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../../img/cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>status</B> <P><B>status</B> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../../img/ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>code</B> <P><B>code</B> is the error or warning code.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../../img/cstr.png" ALT="cstr"></P>
+</TD>
+<TD>
+<B>source</B> <P><B>source</B> describes the origin of the error or warning.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../../img/cstr.png" ALT="cstr"></P>
+</TD>
+<TD>
+<B>Main Name</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../../img/ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>ADIS16448DevRef</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../../img/cerrcodeclst.png" ALT="cerrcodeclst"></P>
+</TD>
+<TD>
+<B>DevStatus</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../../img/cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>status</B> <P><B>status</B> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../../img/ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>code</B> <P><B>code</B> is the error or warning code.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../../img/cstr.png" ALT="cstr"></P>
+</TD>
+<TD>
+<B>source</B> <P><B>source</B> describes the origin of the error or warning.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../../img/ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>Hardware Config</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>SPI Clock Rate (Hz)</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../../img/cenum.png" ALT="cenum"></P>
+</TD>
+<TD>
+<B>IMU SPI Mode (3)</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../../img/cenum.png" ALT="cenum"></P>
+</TD>
+<TD>
+<B>IMU Reset Pin</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../../img/cenum.png" ALT="cenum"></P>
+</TD>
+<TD>
+<B>IMU SPI Bus</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../../img/cenum.png" ALT="cenum"></P>
+</TD>
+<TD>
+<B>IMU Data Ready Pin</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../../img/cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>Stall Config</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../../img/cu8.png" ALT="cu8"></P>
+</TD>
+<TD>
+<B>Pow2BytesPerRead</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../../img/cu16.png" ALT="cu16"></P>
+</TD>
+<TD>
+<B>StallTicks</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../../img/cu8.png" ALT="cu8"></P>
+</TD>
+<TD>
+<B>CsToSclkTicks</B> </TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../../img/cenum.png" ALT="cenum"></P>
+</TD>
+<TD>
+<B>IMU Status LED Pin</B> </TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../../img/cnotern.png" ALT="cnotern"></P>
+</TD>
+<TD>
+<B>Calibration Complete</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../../img/cfiforn.png" ALT="cfiforn"></P>
+</TD>
+<TD>
+<B>Status FIFO</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../../img/cdatavalref.png" ALT="cdatavalref"></P>
+</TD>
+<TD>
+<B>Last Value Reference</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../../img/csvrn.png" ALT="csvrn"></P>
+</TD>
+<TD>
+<B>Sychronous Process VI</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../../img/cfiforn.png" ALT="cfiforn"></P>
+</TD>
+<TD>
+<B>Cmd FIFO</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../../img/ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>Source</B> <P><B>Source</B> specifies the source signal for the interrupt.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../../img/cerrcodeclst.png" ALT="cerrcodeclst"></P>
+</TD>
+<TD>
+<B>DevStatus</B> <P><B>DevStatus</B> describes the error status before this VI or function runs. The default is no error.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../../img/cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>status</B> <P><B>status</B> is TRUE (X) if an error occurred before this node ran or FALSE (checkmark) to indicate a warning or that no error occurred before this node ran. The default is FALSE.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../../img/ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>code</B> <P><B>code</B> is the error or warning code. The default is 0. If <B>status</B> is TRUE, <B>code</B> is an error code. If <B>status</B> is FALSE, <B>code</B> is 0 or a warning code.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../../img/cstr.png" ALT="cstr"></P>
+</TD>
+<TD>
+<B>source</B> <P><B>source</B> specifies the origin of the error or warning and is, in most cases, the name of the node that produced the error or warning. The default is an empty string.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../../img/cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>AnalogTriggerMode?</B> <P><B>AnalogTriggerMode?</B> specifies, when TRUE, to use an analog trigger output instead of a digital input as the digital source.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../../img/cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>DigitalMode</B> <P><B>DigitalMode</B> specifies information about the digital input you want to use as the digital source.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../../img/cenum.png" ALT="cenum"></P>
+</TD>
+<TD>
+<B>DIO Channel</B> <P><B>DIO Module</B> specifies the slot number on the CompactRIO device of the digital module you want to use. <B>DIO Module</B> can specify a value of <B>Slot 4</B> or <B>Slot 6</B>. If <B>DIO Module</B> specifies a value of <B>Default</B>, this VI uses the default digital module. The default digital module is the first digital module, or the module in slot 4.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../../img/cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>AnalogTriggerMode</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../../img/cenum.png" ALT="cenum"></P>
+</TD>
+<TD>
+<B>AnalogTriggerIndex</B> <P>This list the number of available analog trigger logic</P>
+<P>implemented inside the FPGA code.</P>
+<P>As of rev 1.8 there is 8 available analog trigger logic.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../../img/cenum.png" ALT="cenum"></P>
+</TD>
+<TD>
+<B>OutputType</B> </TD>
+</TR>
+</Table>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../../img/cfiforn.png" ALT="cfiforn"></P>
+</TD>
+<TD>
+<B>Data FIFO</B> <P><B>Source</B> specifies the source signal for the interrupt.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../../img/cenum.png" ALT="cenum"></P>
+</TD>
+<TD>
+<B>IMU Status LED Pin</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../../img/cu32.png" ALT="cu32"></P>
+</TD>
+<TD>
+<B>Calibration Time</B> </TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../../img/cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>element</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>XAngle</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>YAngle</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>ZAngle</B> </TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../../img/ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>Calibration Time</B> </TD>
+</TR>
+</Table>
+<HR>
+<H3>Block Diagram</H3>
+<P><IMG SRC="../../../../../../img/ADIS16448 Loop.vid.png" ALT="ADIS16448 Loop.vi"></P>
+<P><IMG SRC="../../../../../../img/ADIS16448 Loop.vid1.png" ALT="ADIS16448 Loop.vi"></P>
+<P><IMG SRC="../../../../../../img/ADIS16448 Loop.vid2.png" ALT="ADIS16448 Loop.vi"></P>
+<P><IMG SRC="../../../../../../img/ADIS16448 Loop.vid3.png" ALT="ADIS16448 Loop.vi"></P>
+<P><IMG SRC="../../../../../../img/ADIS16448 Loop.vid4.png" ALT="ADIS16448 Loop.vi"></P>
+<P><IMG SRC="../../../../../../img/ADIS16448 Loop.vid5.png" ALT="ADIS16448 Loop.vi"></P>
+<P><IMG SRC="../../../../../../img/ADIS16448 Loop.vid6.png" ALT="ADIS16448 Loop.vi"></P>
+<P><IMG SRC="../../../../../../img/ADIS16448 Loop.vid7.png" ALT="ADIS16448 Loop.vi"></P>
+<P><IMG SRC="../../../../../../img/ADIS16448 Loop.vid8.png" ALT="ADIS16448 Loop.vi"></P>
+<P><IMG SRC="../../../../../../img/ADIS16448 Loop.vid9.png" ALT="ADIS16448 Loop.vi"></P>
+<P><IMG SRC="../../../../../../img/ADIS16448 Loop.vid10.png" ALT="ADIS16448 Loop.vi"></P>
+<P><IMG SRC="../../../../../../img/ADIS16448 Loop.vid11.png" ALT="ADIS16448 Loop.vi"></P>
+<P><IMG SRC="../../../../../../img/ADIS16448 Loop.vid12.png" ALT="ADIS16448 Loop.vi"></P>
+<P><IMG SRC="../../../../../../img/ADIS16448 Loop.vid13.png" ALT="ADIS16448 Loop.vi"></P>
+<P><IMG SRC="../../../../../../img/ADIS16448 Loop.vid14.png" ALT="ADIS16448 Loop.vi"></P>
+<P><IMG SRC="../../../../../../img/ADIS16448 Loop.vid15.png" ALT="ADIS16448 Loop.vi"></P>
+<P><IMG SRC="../../../../../../img/ADIS16448 Loop.vid16.png" ALT="ADIS16448 Loop.vi"></P>
+<P><IMG SRC="../../../../../../img/ADIS16448 Loop.vid17.png" ALT="ADIS16448 Loop.vi"></P>
+<P><IMG SRC="../../../../../../img/ADIS16448 Loop.vid18.png" ALT="ADIS16448 Loop.vi"></P>
+<P><IMG SRC="../../../../../../img/ADIS16448 Loop.vid19.png" ALT="ADIS16448 Loop.vi"></P>
+<P><IMG SRC="../../../../../../img/ADIS16448 Loop.vid20.png" ALT="ADIS16448 Loop.vi"></P>
+<P><IMG SRC="../../../../../../img/ADIS16448 Loop.vid21.png" ALT="ADIS16448 Loop.vi"></P>
+<P><IMG SRC="../../../../../../img/ADIS16448 Loop.vid22.png" ALT="ADIS16448 Loop.vi"></P>
+<P><IMG SRC="../../../../../../img/ADIS16448 Loop.vid23.png" ALT="ADIS16448 Loop.vi"></P>
+<P><IMG SRC="../../../../../../img/ADIS16448 Loop.vid24.png" ALT="ADIS16448 Loop.vi"></P>
+<P><IMG SRC="../../../../../../img/ADIS16448 Loop.vid25.png" ALT="ADIS16448 Loop.vi"></P>
+<P><IMG SRC="../../../../../../img/ADIS16448 Loop.vid26.png" ALT="ADIS16448 Loop.vi"></P>
+<P><IMG SRC="../../../../../../img/ADIS16448 Loop.vid27.png" ALT="ADIS16448 Loop.vi"></P>
+<P><IMG SRC="../../../../../../img/ADIS16448 Loop.vid28.png" ALT="ADIS16448 Loop.vi"></P>
+<P><IMG SRC="../../../../../../img/ADIS16448 Loop.vid29.png" ALT="ADIS16448 Loop.vi"></P>
+<P><IMG SRC="../../../../../../img/ADIS16448 Loop.vid30.png" ALT="ADIS16448 Loop.vi"></P>
+<P><IMG SRC="../../../../../../img/ADIS16448 Loop.vid31.png" ALT="ADIS16448 Loop.vi"></P>
+<P><IMG SRC="../../../../../../img/ADIS16448 Loop.vid32.png" ALT="ADIS16448 Loop.vi"></P>
+<P><IMG SRC="../../../../../../img/ADIS16448 Loop.vid33.png" ALT="ADIS16448 Loop.vi"></P>
+<HR>
+<H3>List of SubVIs and Express VIs with Configuration Information</H3>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../../img/Error_Cluster_From_Error_Codei.png" ALT="Error Cluster From Error Code.vi"></P>
+</TD>
+<TD>
+<B><P>Error Cluster From Error Code.vi</P>
+</B><P>C:\Program Files (x86)\National Instruments\LabVIEW 2019\vi.lib\Utility\error.llb\Error Cluster From Error Code.vi</P>
+</TD>
+</TR>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../../img/Clear_Errorsi.png" ALT="Clear Errors.vi"></P>
+</TD>
+<TD>
+<B><P>Clear Errors.vi</P>
+</B><P>C:\Program Files (x86)\National Instruments\LabVIEW 2019\vi.lib\Utility\error.llb\Clear Errors.vi</P>
+</TD>
+</TR>
+</Table>
+<HR>
+<H3>VI Revision History</H3>
+<P>&quot;ADIS16448 Loop.vi History&quot;</P>
+<P>Current Revision:   531</P>
+<HR>
+<H3>Position in Hierarchy</H3>
+<P><IMG SRC="../../../../../../img/ADIS16448 Loop.vih.png" ALT="ADIS16448 Loop.vi"></P>
+<HR>
+<H3>Iconified Cluster Constants</H3>
+<P><IMG SRC="../../../../../../img/ADIS16448 Loop.vik1.png" ALT="ADIS16448 Loop.vi"></P>
+</BODY>
+</HTML>
